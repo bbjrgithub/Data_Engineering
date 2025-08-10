@@ -8,4 +8,4 @@ Hello! This is my in progress Data Engineering portfolio. Most of the projects a
 
 - Overview: For my first Data Engineering project I decided to be contrarian and use Golang instead of the commonly used Python to extract the basescores of CVEs from the NIST CVE API and display them using go-echarts.
 - Technologies used: *Golang, PostgreSQL (Neon), go-echarts*
-- Results: See the demo [here](hhttps://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Get_Daily_CVEs#demo).
+- Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Get_Daily_CVEs#demo).
