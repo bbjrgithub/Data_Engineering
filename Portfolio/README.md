@@ -1,4 +1,4 @@
-# Data Engineering Porfilio
+# Data Engineering Portfolio
 
 Hello! This is my in progress Data Engineering portfolio. Most of the projects are being done as part of my self development, covering essentials skills used in the Data Engineering area.
 
