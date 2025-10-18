@@ -12,6 +12,6 @@ Hello! This is my in progress Data Engineering portfolio. Most of the projects a
 
 ### [Web Scrapping - Download Newsmax Newsfront](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Download_Newsmax_Newsfront)
 
-- Overview: This is a web scrapper that downloads new articles from the "newfront" archive of www.newsmax.com.
+- Overview: This is a web scrapper that downloads news articles from the "newfront" archive of www.newsmax.com.
 - Technologies used: *Python*
 - Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Download_Newsmax_Newsfront#demo).
