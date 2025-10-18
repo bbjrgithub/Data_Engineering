@@ -9,3 +9,9 @@ Hello! This is my in progress Data Engineering portfolio. Most of the projects a
 - Overview: For my first Data Engineering project I decided to be contrarian and use Golang instead of the commonly used Python to extract the basescores of CVEs from the NIST CVE API and display them using go-echarts.
 - Technologies used: *Golang, PostgreSQL (Neon), go-echarts*
 - Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Get_Daily_CVEs#demo).
+
+### [Web Scrapping - Download Newsmax Newsfront](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Download_Newsmax_Newsfront)
+
+- Overview: This is a web scrapper that downloads new articles from the "newfront" archive of www.newsmax.com.
+- Technologies used: *Python*
+- Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Download_Newsmax_Newsfront#demo).
