@@ -3,7 +3,7 @@
 Technologies used: *Python*
 &nbsp;
 
-This is a web scrapper that downloads new articles from the "newfront" archive of ```www.newsmax.com```.
+This is a web scrapper that downloads all new articles from the "newfront" archive of ```www.newsmax.com```.
 
 Things that I learned while building the project:
 
