@@ -61,4 +61,4 @@ I followed along with the project, typing in the code by hand and changing the n
 
 ## Demo
 
-![](Reddit_TCM_Movies_Data_Pipeline_Project__10-31-2025.mp4)
+![](https://github.com/bbjrgithub/Data_Engineering/raw/refs/heads/main/Portfolio/Reddit_TCM_Movies_Data_Pipeline/Reddit_TCM_Movies_Data_Pipeline_Project__10-31-2025.mp4)
