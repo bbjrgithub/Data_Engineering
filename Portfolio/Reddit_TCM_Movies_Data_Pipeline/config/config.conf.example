@@ -1,0 +1,32 @@
+[database]
+database_host = localhost
+database_name = airflow
+database_port = 5432
+database_username = airflow
+database_password = airflow
+
+[file_paths]
+input_path = /opt/airflow/data/input
+output_path = /opt/airflow/data/output
+
+[api_keys]
+reddit_secret_key = 111111111111111111111111111111
+reddit_client_id = 2222222222222222222222
+
+[aws]
+aws_access_key_id = AKIA1111111111111111
+aws_secret_access_key = 1111111112222222223333333444444555566666
+aws_region = us-west-2
+aws_bucket_name = my-reddit-bucket
+# Redshift cluster config
+redshift_hostname = reddit.cmrlo66rivel.us-west-2.redshift.amazonaws.com
+redshift_db_name = main
+redshift_port = 5439 
+redshift_username = root
+redshift_password = 323hjT&^Y&*
+redshift_iam_role = arn:aws:iam::111111111111:role/FullAccessToRedditTCMMoviesBucket
+
+[etl_settings]
+batch_size = 100
+error_handling = abort
+log_level = info
