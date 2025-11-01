@@ -15,3 +15,9 @@ Hello! This is my in progress Data Engineering portfolio. Most of the projects a
 - Overview: This is a web scrapper that downloads all news articles from the "newfront" archive of www.newsmax.com.
 - Technologies used: *Python*
 - Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Download_Newsmax_Newsfront#demo).
+
+### [Reddit TCM Movies Data Pipeline](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Reddit_TCM_Movies_Data_Pipeline)
+
+- Overview: This is a re-implementation of Yusuf Ganiyu's (CodeWithYu) [Reddit Data Pipeline Engineering](https://github.com/airscholar/RedditDataEngineering) project. The pipeline extracts data from the /r/TurnerClassicMovies subreddit and loads it into Redshift.
+- Technologies used: *Airflow*, *Docker*, *Python*, *AWS S3 & Redshift*
+- Results: See the demo [here](https://github.com/bbjrgithub/Data_Engineering/tree/main/Portfolio/Reddit_TCM_Movies_Data_Pipeline#demo).
