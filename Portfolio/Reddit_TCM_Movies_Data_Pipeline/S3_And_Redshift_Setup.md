@@ -5,7 +5,7 @@
        $ aws s3api create-bucket --bucket my-reddit-tcm-movies-data-pipeline-project --region us-west-2 --create-bucket-configuration LocationConstraint=us-west-2
 
        {
-           "Location": "http://my-reddit-tcm-movies-data-pipeline-project.s3.       amazonaws.com/"
+           "Location": "http://my-reddit-tcm-movies-data-pipeline-project.s3.amazonaws.com/"
        }
 
 2. Create IAM policy that has access to the ```my-reddit-tcm-movies-data-pipeline-project``` bucket:
@@ -82,7 +82,7 @@
                "Path": "/",
                "RoleName": "FullAccessToRedditTCMMoviesBucket",
                "RoleId": "AROA2GVM57XO5V6HJVLJC",
-               "Arn": "arn:aws:iam::111111111111:role/    FullAccessToRedditTCMMoviesBucket",
+               "Arn": "arn:aws:iam::111111111111:role/FullAccessToRedditTCMMoviesBucket",
                "CreateDate": "2025-10-23T20:52:50+00:00",
                "AssumeRolePolicyDocument": {
                    "Version": "2012-10-17",
@@ -101,12 +101,20 @@
        
        
        $ aws iam attach-role-policy \
-           --policy-arn arn:aws:iam::111111111111:policy/     FullAccessToRedditTCMMoviesBucket \
+           --policy-arn arn:aws:iam::111111111111:policy/FullAccessToRedditTCMMoviesBucket \
            --role-name FullAccessToRedditTCMMoviesBucket
 
 4. Create cluster:
 
-       $ aws redshift create-cluster --db-name main --cluster-identifier reddit-tcm-movies --node-type ra3.large --number-of-nodes 2 --master-username root --master-user-password hye5432%R%H --iam-roles arn:aws:iam::111111111111:role/FullAccessToRedditTCMMoviesBucket --publicly-accessible --region us-west-2
+       $ aws redshift create-cluster --db-name main \
+           --cluster-identifier reddit-tcm-movies \
+           --node-type ra3.large \
+           --number-of-nodes 2 \
+           --master-username root \
+           --master-user-password hye5432%R%H \
+           --iam-roles arn:aws:iam::111111111111:role/FullAccessToRedditTCMMoviesBucket \
+           --publicly-accessible \
+           --region us-west-2
        
        {
            "Cluster": {
@@ -125,4 +133,4 @@
 
        $ aws ec2 authorize-security-group-ingress \
            --group-id sg-0ab98aa6b05d2f609 \
-           --ip-permissions 'IpProtocol=tcp,FromPort=5439,ToPort=5439,IpRanges=       [{CidrIp=20.100.258.102/32}]'
+           --ip-permissions 'IpProtocol=tcp,FromPort=5439,ToPort=5439,IpRanges=[{CidrIp=20.100.258.102/32}]'
