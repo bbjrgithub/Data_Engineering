@@ -23,13 +23,11 @@ Comment has to go here or an "Module level import not at top of file" error is g
 """
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# sys.path.insert(0, (os.path.dirname(os.path.abspath(__file__))))
-
 from pipelines.copy_to_redshift_pipeline import copy_to_redshift_pipeline
 from pipelines.reddit_tcm_movies_pipeline import reddit_tcm_movies_pipeline
 from pipelines.upload_to_s3_pipeline import upload_to_s3_pipeline
 
-default_args = {"owner": "Me", "start_date": datetime(2025, 10, 29)}
+default_args = {"owner": "Bill Banks Jr", "start_date": datetime(2025, 10, 29)}
 
 file_date = datetime.now().strftime("%Y%m%d")
 
@@ -37,7 +35,7 @@ dag = DAG(
     dag_id="etl_reddit_tcm_movies_pipeline",
     default_args=default_args,
     schedule="@daily",
-    catchup=False,  # catchup=False,
+    catchup=False,
     tags=["reddit", "tcm_movies", "etl", "pipeline"],
 )
 

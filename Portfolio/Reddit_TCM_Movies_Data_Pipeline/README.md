@@ -35,7 +35,13 @@ I followed along with the project, typing in the code by hand and changing the n
        $ virtualenv -p python3.9 .venv39
        $ source .venv39/bin/activate
 
-4. Install the Python dependencies:
+4. May need to run ```chmod 777 ./logs``` so that Airflow can write logs.
+
+5. Make sure that ```.env``` has the Airflow UID and GID
+
+       $ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+
+6. Install the Python dependencies:
 
        $ pip install -r requirements.txt
 

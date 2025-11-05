@@ -32,5 +32,4 @@ def reddit_tcm_movies_pipeline(
     parquet_file_path = f"{DATA_OUTPUT_PATH}/{parquet_file_name}.parquet"
     load_data_to_parquet(post_dataframe, parquet_file_path)
 
-    # return {"csv_key": {csv_file_path}, "parquet_key": {parquet_file_path}}
     return csv_file_path, parquet_file_path
