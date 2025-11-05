@@ -2,7 +2,9 @@
 
 1. Create S3 bucket:
 
-       $ aws s3api create-bucket --bucket my-reddit-tcm-movies-data-pipeline-project --region us-west-2 --create-bucket-configuration LocationConstraint=us-west-2
+       $ aws s3api create-bucket --bucket my-reddit-tcm-movies-data-pipeline-project \
+       --region us-west-2 \
+       --create-bucket-configuration LocationConstraint=us-west-2
 
        {
            "Location": "http://my-reddit-tcm-movies-data-pipeline-project.s3.amazonaws.com/"
@@ -41,7 +43,7 @@
            "Policy": {
                "PolicyName": "FullAccessToRedditTCMMoviesBucket",
                "PolicyId": "ANPA2GVM57XOUXFZX4SVR",
-               "Arn": "arn:aws:iam::111111111111:policy/         FullAccessToRedditTCMMoviesBucket",
+               "Arn": "arn:aws:iam::111111111111:policy/FullAccessToRedditTCMMoviesBucket",
                "Path": "/",
                "DefaultVersionId": "v1",
                "AttachmentCount": 0,
